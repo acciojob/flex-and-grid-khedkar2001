@@ -1,1 +1,42 @@
-/*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Grid layout for card container */
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Card styling */
+.card {
+    display: flex; /* Flexbox inside each card */
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 10px solid #ccc;
+    background-color: #fafafa;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Typography */
+.card h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.75em;
+    color: #555;
+    line-height: 1.4em;
+}
